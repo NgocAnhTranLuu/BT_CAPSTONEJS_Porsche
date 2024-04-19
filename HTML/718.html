@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/iconTLNA2.png" type="image/x-icon">
+    <title>CorpVision - TranLuuNgocAnh</title>
+
+
+    <!-- FONT WEB GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ICON -->
+    <!-- ICON FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ICON LINE AWESOME -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+    </style>
+
+    <!-- Hiệu ứng chạy trang Slick JS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <!-- CSS HTML-->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="container-xl navbar navbar-expand-lg">
+            <a class="font-P navbar-brand" href="../index.html">Porsche</a>
+
+            <!-- thanh bar khi ở chế độ đt -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown">
+                            Các dòng xe
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../HTML/718.html">718</a>
+                            <a class="dropdown-item" href="../HTML/911.html">911</a>
+                            <a class="dropdown-item" href="../HTML/Taycan.html">Taycan</a>
+                            <a class="dropdown-item" href="../HTML/Panamera.html">Panamera</a>
+                            <a class="dropdown-item" href="../HTML/Macan.html">Macan</a>
+                            <a class="dropdown-item" href="../HTML/Cayenne.html">Cayenne</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Về Porcher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Dịch vụ</a>
+                    </li>
+                </ul>
+
+
+                <form class="header_form form-inline">
+                    <input class="header_input form-control " type="search" placeholder="Search" aria-label="Search"
+                        required>
+                    <button class="header_btn btn btn-outline-success" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+
+                <div class="btn-DK">
+                    <div class="btn_buy">
+                        <a href="../HTML/GioHang.html"><i class="fa-solid fa-cart-flatbed"></i></a>
+                    </div>
+
+                    <button class="btn btn-outline1">
+                        <a href="../HTML/Dangnhap.html">Tài khoản</a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- BANNER/CAROUSEL -->
+    <section class="carousel_banner">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <!-- nút - chuyển -->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel_item carousel-item active">
+                    <div class="carousel-caption d-md-block">
+                        <p>DÒNG XE</p>
+                        <span>718 Cayman</span>
+                        <div class="carousel_module">
+                            <div class="carousel_module_specs module_specs2">
+                                <p>3.850.000.000 VNĐ*</p>
+                                <p>Giá tiêu chuẩn</p>
+                            </div>
+                            <div class="carousel_module_specs module_specs2">
+                                <p>220kW/ 300PS</p>
+                                <p>Công suất</p>
+                            </div>
+                            <div class="carousel_module_specs module_specs2">
+                                <p>4,9 giây</p>
+                                <p>Tăng tốc</p>
+                            </div>
+                            <div class="carousel_module_specs">
+                                <p>275 km/h</p>
+                                <p>Tốc độ cực đại</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel_img_con">
+                        <img src="../img/1.718/718-cayman-1.png" class="d-block" alt="...">
+                    </div>
+                </div>
+                <div class="carousel_item carousel-item">
+                    <div class="carousel-caption d-md-block">
+                        <p>DÒNG XE</p>
+                        <span>718 Edition</span>
+                        <div class="carousel_module">
+                            <div class="carousel_module_specs module_specs2">
+                                <p>4.260.000.000 VNĐ*</p>
+                                <p>Giá tiêu chuẩn</p>
+                            </div>
+                            <div class="carousel_module_specs module_specs2">
+                                <p>220kW/ 300PS</p>
+                                <p>Công suất</p>
+                            </div>
+                            <div class="carousel_module_specs module_specs2">
+                                <p>4,9 giây</p>
+                                <p>Tăng tốc</p>
+                            </div>
+                            <div class="carousel_module_specs">
+                                <p>275 km/h</p>
+                                <p>Tốc độ cực đại</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel_img_con">
+                        <img src="../img/1.718/718-cayman-2.png" class="d-block" alt="...">
+                    </div>
+                </div>
+                <div class="carousel_item carousel-item">
+                    <div class="carousel-caption d-md-block">
+                        <p>DÒNG XE</p>
+                        <span>718 Edition</span>
+                        <div class="carousel_module">
+                            <div class="carousel_module_specs module_specs2">
+                                <p>4.260.000.000 VNĐ*</p>
+                                <p>Giá tiêu chuẩn</p>
+                            </div>
+                            <div class="carousel_module_specs module_specs2">
+                                <p>220kW/ 300PS</p>
+                                <p>Công suất</p>
+                            </div>
+                            <div class="carousel_module_specs module_specs2">
+                                <p>4,9 giây</p>
+                                <p>Tăng tốc</p>
+                            </div>
+                            <div class="carousel_module_specs">
+                                <p>275 km/h</p>
+                                <p>Tốc độ cực đại</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel_img_con">
+                        <img src="../img/1.718/718-cayman-3.png" class="d-block" alt="...">
+                    </div>
+                </div>
+                <div class="carousel_item carousel-item">
+                    <div class="carousel-caption d-md-block">
+                        <p>DÒNG XE</p>
+                        <span>718 Boxster</span>
+                        <div class="carousel_module">
+                            <div class="carousel_module_specs module_specs2">
+                                <p>3.960.000.000 VNĐ*</p>
+                                <p>Giá tiêu chuẩn</p>
+                            </div>
+                            <div class="carousel_module_specs module_specs2">
+                                <p>220kW/ 300PS</p>
+                                <p>Công suất</p>
+                            </div>
+                            <div class="carousel_module_specs module_specs2">
+                                <p>4,9 giây</p>
+                                <p>Tăng tốc</p>
+                            </div>
+                            <div class="carousel_module_specs">
+                                <p>275 km/h</p>
+                                <p>Tốc độ cực đại</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel_img_con">
+                        <img src="../img/1.718/718-cayman-4.png" class="d-block" alt="...">
+                    </div>
+                </div>
+                <div class="carousel_item carousel-item">
+                    <div class="carousel-caption d-md-block">
+                        <p>DÒNG XE</p>
+                        <span>718 Boxster</span>
+                        <div class="carousel_module">
+                            <div class="carousel_module_specs module_specs2">
+                                <p>3.960.000.000 VNĐ*</p>
+                                <p>Giá tiêu chuẩn</p>
+                            </div>
+                            <div class="carousel_module_specs module_specs2">
+                                <p>220kW/ 300PS</p>
+                                <p>Công suất</p>
+                            </div>
+                            <div class="carousel_module_specs module_specs2">
+                                <p>4,9 giây</p>
+                                <p>Tăng tốc</p>
+                            </div>
+                            <div class="carousel_module_specs">
+                                <p>275 km/h</p>
+                                <p>Tốc độ cực đại</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel_img_con">
+                        <img src="../img/1.718/718-cayman-5.png" class="d-block" alt="...">
+                    </div>
+                </div>
+
+                <div class="carousel-inner_nen">
+                    <img src="../img/banner_nen.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+            <!-- 2 nút sang trái phải -->
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+
+
+    <!-- THÔNG TIN SẢN PHẨM 1 -->
+    <section class="Con_SP1">
+        <div class="container Con_SP1_text">
+            <h4>THÔNG SỐ KỸ THUẬT</h4>
+            <h2>Specifications</h2>
+            <div class="Con_SP1_item">
+                <h5>Công suất</h5>
+                <p>300 PS (220 kW)</p>
+            </div>
+            <div class="Con_SP1_item">
+                <h5>Mô-men xoắn cực đại</h5>
+                <p>380 Nm</p>
+            </div>
+            <div class="Con_SP1_item">
+                <h5>Tăng tốc từ 0 - 100 km/giờ</h5>
+                <p>4,9 giây</p>
+            </div>
+            <div class="Con_SP1_item">
+                <h5>Tốc độ tối đa</h5>
+                <p>275 km/giờ</p>
+            </div>
+            <div class="Con_SP1_item">
+                <h5>Mức tiêu thụ kết hợp</h5>
+                <p></p>
+            </div>
+            <div class="Con_SP1_item">
+                <h5>Lượng khí thải CO2</h5>
+                <p></p>
+            </div>
+            <div class="Con_SP1_item">
+                <h5>Giá tiêu chuẩn</h5>
+                <p>4.210.000.000 VNĐ*</p>
+            </div>
+            <div class="Con_SP1_item">
+                <p>Giá tiêu chuẩn bao gồm thuế nhập khẩu, thuế tiêu thụ đặc biệt và thuế giá trị gia tăng. Bảng giá,
+                    thông số kỹ thuật và hình ảnh có thể thay đổi theo từng thời điểm mà không báo trước</p>
+            </div>
+            <!-- <div>
+                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+            </div> -->
+        </div>
+        <div class="Con_SP1_video">
+            <video loop autoplay muted src="../video/Porsche-Taycan.mp4"></video>
+        </div>
+    </section>
+
+    <!-- THÔNG TIN SẢN PHẨM 2 -->
+    <section class="Con_SP2">
+        <div class="row container Con_SP2_text ">
+            <div class="Con_SP2_img col-lg-6">
+                <img src="../img/1.718/banner1.1.jpeg" class="d-block" alt="...">
+            </div>
+            <div class="Con_SP2_item col-lg-6">
+                <h2>Design</h2>
+                <p>Boxster và Cayman hoàn toàn mới là chương kế tiếp của kỷ nguyên 718. Ngay từ trong tim, động tăng áp
+                    bốn xy-lanh đối đỉnh cùng chung nhịp đập với tinh thần thi đấu mang lại vô số vinh quang chiến
+                    thắng. Dòng xe này tồn tại ý chí phá vỡ mọi tiêu chuẩn và truyền cảm hứng. Vì thế, hoàn toàn hợp lý
+                    khi tên của hai mẫu xe này cùng mang thêm ba chữ số, kế thừa huyền thoại 718.
+                </p>
+            </div>
+            <div class="Con_SP2_item col-lg-6">
+                <h2>Concept</h2>
+                <p>Dòng xe 718 hoàn toàn mới được chế tác theo tinh thần thể thao thuần khiết. Những mẫu xe roadster
+                    động cơ đặt giữa này thống nhất tinh thần thể thao của huyền thoại Porsche 718 với xe thể thao của
+                    tương lai – và truyền lửa vào những cung đường hiện nay trên thế giới. Với một mục tiêu: sống trọn
+                    từng ngày.</p>
+            </div>
+            <div class="Con_SP2_img col-lg-6">
+                <img src="../img/1.718/banner1.3.jpeg" class="d-block" alt="...">
+            </div>
+            <div class="Con_SP2_img col-lg-6">
+                <video loop autoplay muted src="../video/718-porsche-video.mp4"></video>
+            </div>
+            <div class="Con_SP2_item col-lg-6">
+                <h2>Performance</h2>
+                <p>Giá trị cộng thêm đến từ những cống hiến và sự khéo léo. Chúng tôi tạo ra một sản phẩm thủ công pha
+                    trộn hiệu suất thể thao, sự thoải mái, phong cách và phản ánh sở thích cá nhân của riêng bạn. Một
+                    chiếc Porsche đặc thù của bạn.</p>
+                <div>
+                    <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- CÁC LOẠI XE + GIÁ -->
+    <section class="LoaiXe">
+        <div class="container model">
+            <div class="model_text">
+                <h4>CÁC DÒNG XE</h4>
+                <h2>Models</h2>
+                <p>
+                    Porsche mang đến thị trường Việt Nam các dòng xe đậm chất thể thao bao gồm: dòng xe 911 huyền thoại,
+                    dòng xe “roadster” 718 Boxster, dòng xe coupe 718 Cayman, dòng xe Gran Turismo Panamera, dòng xe SUV
+                    Cayenne và dòng xe SUV cỡ trung Macan. Đặc biệt, Taycan, phiên bản thương mại của dòng xe vận hành
+                    hoàn toàn bằng điện đầu tiên của Porsche đã được chính thức giới thiệu và sẽ thiết lập các tiêu
+                    chuẩn cho công nghệ di động trong tương lai.
+                </p>
+            </div>
+
+            <div class="row model_card">
+                <div class="card col-lg-4 col-md-6">
+                    <div class="model_box">
+                        <div class="model_img">
+                            <a href="../HTML/718.html">
+                                <img src="../img/porsche-small 1.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="model_footer">
+                                <a href="../HTML/718.html"><button class="btn_click_trang">Xem thêm</button></a>
+                                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                            </div>
+                        </div>
+                        <div class="model_body">
+                            <a href="../HTML/718.html">718</a><br>
+                            <p>Giá từ 3.850.000.000 VNĐ*</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <div class="model_box">
+                        <div class="model_img">
+                            <a href="../HTML/911.html">
+                                <img src="../img/porsche-small 2.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="model_footer">
+                                <a href="../HTML/911.html"><button class="btn_click_trang">Xem thêm</button></a>
+                                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                            </div>
+                        </div>
+                        <div class="model_body">
+                            <a href="../HTML/911.html">911</a><br>
+                            <p>Giá từ 7.620.000.000 VNĐ*</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <div class="model_box">
+                        <div class="model_img">
+                            <a href="../HTML/Taycan.html">
+                                <img src="../img/porsche-small 3.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="model_footer">
+                                <a href="../HTML/Taycan.html"><button class="btn_click_trang">Xem thêm</button></a>
+                                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                            </div>
+                        </div>
+                        <div class="model_body">
+                            <a href="../HTML/Taycan.html">Taycan</a><br>
+                            <p>Giá từ 4.260.000.000 VNĐ*</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <div class="model_box">
+                        <div class="model_img">
+                            <a href="../HTML/Panamera.html">
+                                <img src="../img/porsche-small 4.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="model_footer">
+                                <a href="../HTML/Panamera.html"><button class="btn_click_trang">Xem thêm</button></a>
+                                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                            </div>
+                        </div>
+                        <div class="model_body">
+                            <a href="../HTML/Panamera.html">Panamera</a><br>
+                            <p>Giá từ 5.560.000.000 VNĐ*</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <div class="model_box">
+                        <div class="model_img">
+                            <a href="../HTML/Macan.html">
+                                <img src="../img/porsche-small 5.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="model_footer">
+                                <a href="../HTML/Macan.html"><button class="btn_click_trang">Xem thêm</button></a>
+                                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                            </div>
+                        </div>
+                        <div class="model_body">
+                            <a href="../HTML/Macan.html">Macan</a><br>
+                            <p>Giá từ 3.350.000.000 VNĐ*</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <div class="model_box">
+                        <div class="model_img">
+                            <a href="../HTML/Cayenne.html">
+                                <img src="../img/porsche-small 6.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="model_footer">
+                                <a href="../HTML/Cayenne.html"><button class="btn_click_trang">Xem thêm</button></a>
+                                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                            </div>
+                        </div>
+                        <div class="model_body">
+                            <a href="../HTML/Cayenne.html">Cayenne</a><br>
+                            <p>Giá từ 5.560.000.000 VNĐ*</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer_top">
+            <div class="footer_top__text">
+                <h4>Khám phá</h4>
+                <h2>Discover</h2>
+                <p>
+                    Mùa lễ hội này, hãy biến giấc mơ của những người thân yêu thành hiện thực và tận hưởng những khoảnh
+                    khắc đáng nhớ với Porsche Lifestyle.
+                </p>
+            </div>
+            <div class="row footer_top__form">
+                <div class="footer_top__img col-lg-3 col-md-6">
+                    <div>
+                        <img src="../img/Discover-porsche-1.jpg" class="d-block w-100" alt="...">
+                        <div class="footer_top__img_text">
+                            <h4>Porsche</h4>
+                            <p>E-Performance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_top__img col-lg-3 col-md-6">
+                    <div>
+                        <img src="../img/Discover-porsche-2.jpg" class="d-block w-100" alt="...">
+                        <div class="footer_top__img_text">
+                            <h4>Porsche</h4>
+                            <p>Phong cách - Lifestyle</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_top__img col-lg-3 col-md-6">
+                    <div>
+                        <img src="../img/Discover-porsche-3.jpg" class="d-block w-100" alt="...">
+                        <div class="footer_top__img_text">
+                            <h4>Porsche</h4>
+                            <p>Cung đường chinh phục</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_top__img col-lg-3 col-md-6">
+                    <div>
+                        <img src="../img/Discover-porsche-4.jpg" class="d-block w-100" alt="...">
+                        <div class="footer_top__img_text">
+                            <h4>Porsche</h4>
+                            <p>Bộ sưu tập - Phụ kiện</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row container footer_button">
+            <div class="col-lg-4 col-md-6 footer_button__1">
+                <div class="footer_button__1_porsche">
+                    <a class="font-P" href="../index.html">Porsche</a>
+                </div>
+                <p>
+                    Dr. Ing. h. c. F. Porsche AG được thành lập từ ngày 25 tháng 4 năm 1931 bởi ông Ferdinand Porsche và
+                    có trụ sở chính đặt tại thành phố Stuttgart, Đức.
+                </p>
+                <div class="footer_button__1logo">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 footer_button__2">
+                <h3>Thông tin liên lạc</h3>
+                <p>Địa chỉ: Tầng 1, Tháp 1, Capital Place, 29 Liễu Giai, Ba Đình, Hà Nội</p>
+                <div>
+                    <span>Điện thoại:</span>
+                    <a href="tel:(+84) 1234 5678">(+84) 1234 5678</a>
+                </div>
+                <div>
+                    <span>Email:</span>
+                    <a href="mailto::info@porsche-vietnam.com">info@porsche-vietnam.com</a>
+                </div>
+                <div>
+                    <span>Dịch vụ:</span>
+                    <a href="mailto::crm@porsche-vietnam.com">crm@porsche-vietnam.com</a>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5 footer_button__3">
+                <h3>Porsche</h3>
+                <ul>
+                    <li><a href="">Porsche Sài Gòn</a></li>
+                    <li><a href="">Porsche Hà Nội</a></li>
+                    <li><a href="">Studio Hà Nội</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5 footer_button__4">
+                <h3>Dòng xe</h3>
+                <ul>
+                    <li><a href="../HTML/718.html">718</a></li>
+                    <li><a href="../HTML/911.html">911</a></li>
+                    <li><a href="../HTML/Taycan.html">Taycan</a></li>
+                    <li><a href="../HTML/Panamera.html">Panamera</a></li>
+                    <li><a href="../HTML/Macan.html">Macan</a></li>
+                    <li><a href="../HTML/Cayenne.html">Cayenne</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer_copyright">
+            <div class="container">
+                <p>
+                    © 2024 All Rights Reserved | Design by
+                    <span>
+                        Trần Lưu Ngọc Anh "siêu cấp đẹp trai"
+                    </span>
+                    .
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- BACKTOTOP -->
+    <a href="" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- JS HTML -->
+
+
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- CDN JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Cố định Header -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop()) {
+                    $('header').addClass('sticky');
+                } else {
+                    $('header').removeClass('sticky');
+                }
+            });
+        });
+    </script>
+
+    <!-- BACKTOTOP -->
+    <script src="../JS/BackToTop/util.js"></script>
+    <script src="../JS/BackToTop/main.js"></script>
+
+    <!-- Hiệu ứng chạy trang Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.feedback_slide').slick({
+                // setting-name: setting-value
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                // autoplay: true,
+                autoplaySpeed: 4000,
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>

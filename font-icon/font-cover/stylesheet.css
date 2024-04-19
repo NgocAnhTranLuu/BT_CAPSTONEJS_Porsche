@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Oswald Stencil';
+    src: url('OswaldStencil-Bold.woff2') format('woff2'),
+        url('OswaldStencil-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '911 Porscha';
+    src: url('911Porscha.woff2') format('woff2'),
+        url('911Porscha.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
