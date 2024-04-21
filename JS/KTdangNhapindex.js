@@ -10,10 +10,10 @@ let kiemTraUser = localStorage.getItem("UserChinh") ? true : false
 
 function kiemTraLogin() {
     if (kiemTraUser) {
-        window.location.href = "GioHang.html"
+        window.location.href = "HTML/GioHang.html"
     } else {
         alert("Đăng nhập ngay để mua sắm thỏa thích")
-        window.location.href = "Dangnhap.html"
+        window.location.href = "HTML/Dangnhap.html"
     }
 }
 
@@ -46,6 +46,6 @@ document.querySelector(".btn_user_tenND").innerHTML = "Tài khoản: " + KTUser
 
 
 function dangNhapKoTK() {
-    window.location.href = "Dangnhap.html"
+    window.location.href = "HTML/Dangnhap.html"
 }
 

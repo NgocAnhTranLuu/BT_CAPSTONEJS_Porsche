@@ -110,9 +110,20 @@
                         </a>
                     </div>
 
-                    <button class="btn-outline1">
-                        <a href="./HTML/Dangnhap.html" class="btn_user"></a>
+                    <button class="btn-outline1 btn_user1" onclick="dangNhapKoTK()">
+                        <p>Đăng nhập</p>
                     </button>
+
+                    <div class="btn-outline_user" data-target="#anUser" data-toggle="collapse">
+                        <button class="btn-outline1 btn_user2">
+                            <p class="btn_user2_text"></p>
+                        </button>
+                        <div class="btn_user_ten collapse hidden" id="anUser">
+                            <h5 class="btn_user_tenND"></h5>
+                            <button class="btn btn-danger">Đăng xuất</button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </nav>
@@ -456,7 +467,7 @@
 
 
     <!-- JS HTML -->
-    <script src="./JS/KTdangNhap.js"></script>
+    <script src="./JS/KTdangNhapindex.js"></script>
     <script src="./JS/maSP.js"></script>
     
     <script src="./JS/mainSPindex.js"></script>

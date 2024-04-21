@@ -235,6 +235,8 @@ header .btn_buy p {
     line-height: 0.2;
     transition: all 1s;
 }
+
+
 header .btn-outline_user{
     position: relative;
 }
@@ -287,7 +289,8 @@ header.sticky .btn-outline1:hover {
     background-color: #d5001c;
 }
 
-header.sticky .btn-outline1:hover a {
+header.sticky .btn-outline1:hover a,
+header.sticky .btn-outline1:hover p {
     color: white;
 }
 
