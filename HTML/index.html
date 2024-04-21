@@ -44,7 +44,7 @@
 
 
     <!-- CSS HTML-->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 
 
 
@@ -73,12 +73,12 @@
                             Các dòng xe
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="./HTML/718.html">718</a>
-                            <a class="dropdown-item" href="./HTML/911.html">911</a>
-                            <a class="dropdown-item" href="./HTML/Taycan.html">Taycan</a>
-                            <a class="dropdown-item" href="./HTML/Panamera.html">Panamera</a>
-                            <a class="dropdown-item" href="./HTML/Macan.html">Macan</a>
-                            <a class="dropdown-item" href="./HTML/Cayenne.html">Cayenne</a>
+                            <a class="dropdown-item" href="./718.html">718</a>
+                            <a class="dropdown-item" href="./911.html">911</a>
+                            <a class="dropdown-item" href="./Taycan.html">Taycan</a>
+                            <a class="dropdown-item" href="./Panamera.html">Panamera</a>
+                            <a class="dropdown-item" href="./Macan.html">Macan</a>
+                            <a class="dropdown-item" href="./Cayenne.html">Cayenne</a>
                         </div>
                     </li>
 
@@ -102,11 +102,16 @@
 
                 <div class="btn-DK">
                     <div class="btn_buy">
-                        <a href="./HTML/GioHang.html"><i class="fa-solid fa-cart-flatbed"></i></a>
+                        <a onclick="kiemTraLogin()">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="btn_buy_number">
+                                <p class="cardNumber"></p>
+                            </div>
+                        </a>
                     </div>
 
-                    <button class="btn btn-outline1">
-                        <a href="./HTML/Dangnhap.html">Tài khoản</a>
+                    <button class="btn-outline1">
+                        <a href="./Dangnhap.html" class="btn_user"></a>
                     </button>
                 </div>
             </div>
@@ -132,12 +137,12 @@
                         <p>DÒNG XE</p>
                         <span>Taycan</span>
                         <div>
-                            <a href="./HTML/Taycan.html"><button class="btn_click_trang">Xem thêm</button></a>
-                            <a href="./HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                            <a href="./Taycan.html"><button class="btn_click_trang">Xem chi tiết</button></a>
+                            <a><button class="btn_click_do gioHangChung" onclick="gioHangChung()" value="SP003">Thêm giỏ hàng</button></a>
                         </div>
                     </div>
                     <div class="carousel_img">
-                        <img src="./img/banner1.jpeg" class="d-block w-100" alt="...">
+                        <img src="../img/banner1.jpeg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <div class="carousel_item carousel-item">
@@ -147,12 +152,12 @@
                         <p>DÒNG XE</p>
                         <span>Cayenne</span>
                         <div>
-                            <a href="./HTML/Cayenne.html"><button class="btn_click_trang">Xem thêm</button></a>
-                            <a href="./HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                            <a href="./Cayenne.html"><button class="btn_click_trang">Xem chi tiết</button></a>
+                            <!-- <a><button class="btn_click_do gioHangChung" onclick="gioHangChung()" value="SP006">Thêm giỏ hàng</button></a> -->
                         </div>
                     </div>
                     <div class="carousel_img">
-                        <img src="./img/banner2.jpeg" class="d-block w-100" alt="...">
+                        <img src="../img/banner2.jpeg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <div class="carousel_item carousel-item">
@@ -162,12 +167,12 @@
                         <p>DÒNG XE</p>
                         <span>718 Cayman</span>
                         <div>
-                            <a href="./HTML/718.html"><button class="btn_click_trang">Xem thêm</button></a>
-                            <a href="./HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
+                            <a href="./718.html"><button class="btn_click_trang">Xem chi tiết</button></a>
+                            <!-- <a><button class="btn_click_do gioHangChung" onclick="gioHangChung()" value="SP001">Thêm giỏ hàng</button></a> -->
                         </div>
                     </div>
                     <div class="carousel_img">
-                        <img src="./img/banner3.jpeg" class="d-block w-100" alt="...">
+                        <img src="../img/banner3.jpeg" class="d-block w-100" alt="...">
                     </div>
                 </div>
             </div>
@@ -204,109 +209,6 @@
             </div>
 
             <div class="row model_card">
-                <div class="card col-lg-4 col-md-6">
-                    <div class="model_box">
-                        <div class="model_img">
-                            <a href="./HTML/718.html">
-                                <img src="./img/porsche-small 1.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="model_footer">
-                                <a href="./HTML/718.html"><button class="btn_click_trang">Xem thêm</button></a>
-                                <a href="./HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
-                            </div>
-                        </div>
-                        <div class="model_body">
-                            <a href="./HTML/718.html">718</a><br>
-                            <p>Giá từ 3.850.000.000 VNĐ*</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="model_box">
-                        <div class="model_img">
-                            <a href="./HTML/911.html">
-                                <img src="./img/porsche-small 2.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="model_footer">
-                                <a href="./HTML/911.html"><button class="btn_click_trang">Xem thêm</button></a>
-                                <a href="./HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
-                            </div>
-                        </div>
-                        <div class="model_body">
-                            <a href="./HTML/911.html">911</a><br>
-                            <p>Giá từ 7.620.000.000 VNĐ*</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="model_box">
-                        <div class="model_img">
-                            <a href="./HTML/Taycan.html">
-                                <img src="./img/porsche-small 3.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="model_footer">
-                                <a href="./HTML/Taycan.html"><button class="btn_click_trang">Xem thêm</button></a>
-                                <a href="./HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
-                            </div>
-                        </div>
-                        <div class="model_body">
-                            <a href="./HTML/Taycan.html">Taycan</a><br>
-                            <p>Giá từ 4.260.000.000 VNĐ*</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="model_box">
-                        <div class="model_img">
-                            <a href="./HTML/Panamera.html">
-                                <img src="./img/porsche-small 4.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="model_footer">
-                                <a href="./HTML/Panamera.html"><button class="btn_click_trang">Xem thêm</button></a>
-                                <a href="./HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
-                            </div>
-                        </div>
-                        <div class="model_body">
-                            <a href="./HTML/Panamera.html">Panamera</a><br>
-                            <p>Giá từ 5.560.000.000 VNĐ*</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="model_box">
-                        <div class="model_img">
-                            <a href="./HTML/Macan.html">
-                                <img src="./img/porsche-small 5.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="model_footer">
-                                <a href="./HTML/Macan.html"><button class="btn_click_trang">Xem thêm</button></a>
-                                <a href="./HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
-                            </div>
-                        </div>
-                        <div class="model_body">
-                            <a href="./HTML/Macan.html">Macan</a><br>
-                            <p>Giá từ 3.350.000.000 VNĐ*</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="model_box">
-                        <div class="model_img">
-                            <a href="./HTML/Cayenne.html">
-                                <img src="./img/porsche-small 6.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="model_footer">
-                                <a href="./HTML/Cayenne.html"><button class="btn_click_trang">Xem thêm</button></a>
-                                <a href="./HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
-                            </div>
-                        </div>
-                        <div class="model_body">
-                            <a href="./HTML/Cayenne.html">Cayenne</a><br>
-                            <p>Giá từ 5.560.000.000 VNĐ*</p>
-                        </div>
-                    </div>
-                </div>
 
             </div>
 
@@ -328,7 +230,7 @@
                 cấp những dịch vụ theo tiêu chuẩn toàn cầu.
             </p>
         </div>
-        <video loop autoplay muted src="./video/Porsche-Taycan.mp4"></video>
+        <video loop autoplay muted src="../video/Porsche-Taycan.mp4"></video>
     </section>
 
 
@@ -344,7 +246,7 @@
                 <div class="feedback_item">
                     <div class="feedback_people">
                         <div class="feedback_img">
-                            <img src="./img/feedback-01.jpg" alt="">
+                            <img src="../img/feedback-01.jpg" alt="">
                         </div>
                         <div class="feedback_name">
                             <h5>Jisoo</h5>
@@ -361,7 +263,7 @@
                 <div class="feedback_item">
                     <div class="feedback_people">
                         <div class="feedback_img">
-                            <img src="./img/feedback-02.jpg" alt="">
+                            <img src="../img/feedback-02.jpg" alt="">
                         </div>
                         <div class="feedback_name">
                             <h5>Jennie</h5>
@@ -378,7 +280,7 @@
                 <div class="feedback_item">
                     <div class="feedback_people">
                         <div class="feedback_img">
-                            <img src="./img/feedback-03.jpg" alt="">
+                            <img src="../img/feedback-03.jpg" alt="">
                         </div>
                         <div class="feedback_name">
                             <h5>Rosé</h5>
@@ -395,7 +297,7 @@
                 <div class="feedback_item">
                     <div class="feedback_people">
                         <div class="feedback_img">
-                            <img src="./img/feedback-04.jpg" alt="">
+                            <img src="../img/feedback-04.jpg" alt="">
                         </div>
                         <div class="feedback_name">
                             <h5>Lisa</h5>
@@ -431,7 +333,7 @@
             <div class="row footer_top__form">
                 <div class="footer_top__img col-lg-3 col-md-6">
                     <div>
-                        <img src="./img/Discover-porsche-1.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/Discover-porsche-1.jpg" class="d-block w-100" alt="...">
                         <div class="footer_top__img_text">
                             <h4>Porsche</h4>
                             <p>E-Performance</p>
@@ -440,7 +342,7 @@
                 </div>
                 <div class="footer_top__img col-lg-3 col-md-6">
                     <div>
-                        <img src="./img/Discover-porsche-2.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/Discover-porsche-2.jpg" class="d-block w-100" alt="...">
                         <div class="footer_top__img_text">
                             <h4>Porsche</h4>
                             <p>Phong cách - Lifestyle</p>
@@ -449,7 +351,7 @@
                 </div>
                 <div class="footer_top__img col-lg-3 col-md-6">
                     <div>
-                        <img src="./img/Discover-porsche-3.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/Discover-porsche-3.jpg" class="d-block w-100" alt="...">
                         <div class="footer_top__img_text">
                             <h4>Porsche</h4>
                             <p>Cung đường chinh phục</p>
@@ -458,7 +360,7 @@
                 </div>
                 <div class="footer_top__img col-lg-3 col-md-6">
                     <div>
-                        <img src="./img/Discover-porsche-4.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/Discover-porsche-4.jpg" class="d-block w-100" alt="...">
                         <div class="footer_top__img_text">
                             <h4>Porsche</h4>
                             <p>Bộ sưu tập - Phụ kiện</p>
@@ -520,12 +422,12 @@
             <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5 footer_button__4">
                 <h3>Dòng xe</h3>
                 <ul>
-                    <li><a href="./HTML/718.html">718</a></li>
-                    <li><a href="./HTML/911.html">911</a></li>
-                    <li><a href="./HTML/Taycan.html">Taycan</a></li>
-                    <li><a href="./HTML/Panamera.html">Panamera</a></li>
-                    <li><a href="./HTML/Macan.html">Macan</a></li>
-                    <li><a href="./HTML/Cayenne.html">Cayenne</a></li>
+                    <li><a href="./718.html">718</a></li>
+                    <li><a href="./911.html">911</a></li>
+                    <li><a href="./Taycan.html">Taycan</a></li>
+                    <li><a href="./Panamera.html">Panamera</a></li>
+                    <li><a href="./Macan.html">Macan</a></li>
+                    <li><a href="./Cayenne.html">Cayenne</a></li>
                 </ul>
             </div>
         </div>
@@ -554,7 +456,10 @@
 
 
     <!-- JS HTML -->
-
+    <script src="../JS/KTdangNhap.js"></script>
+    <script src="../JS/maSP.js"></script>
+    
+    <script src="../JS/mainSP.js"></script>
 
 
 
@@ -584,8 +489,8 @@
     </script>
 
     <!-- BACKTOTOP -->
-    <script src="./JS/BackToTop/util.js"></script>
-    <script src="./JS/BackToTop/main.js"></script>
+    <script src="../JS/BackToTop/util.js"></script>
+    <script src="../JS/BackToTop/main.js"></script>
 
     <!-- Hiệu ứng chạy trang Slick JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"

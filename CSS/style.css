@@ -160,11 +160,16 @@ header .btn-DK {
     display: flex;
 }
 
-header .btn-DK .btn-outline1 {
+header .btn-outline1 {
     transition: all 1s;
+    background-color: #9a001500;
+    border: 1px solid #9a001579;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
 }
 
-header .btn-DK .btn-outline1 a {
+header .btn-outline1 a {
     text-decoration: none;
     color: white;
     border: none;
@@ -174,16 +179,18 @@ header .btn-DK .btn-outline1 a {
     display: block;
 }
 
+
+
+
 header .navbar-nav a:hover,
-header .btn-DK .btn-outline1:hover {
+header .btn-outline1:hover{
     color: white;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #9a001579;
     backdrop-filter: blur(5px);
 }
 
-
 /* nút giỏ hàng */
-header .btn-DK i {
+header .btn_buy i {
     color: white;
     font-size: 1.5rem;
     align-items: center;
@@ -191,9 +198,43 @@ header .btn-DK i {
     transition: all 1s;
 }
 
-header .btn-DK i:hover {
-    color: #ff0022;
+header .btn_buy:hover i {
+    color: #d5001c;
+}
+header .btn_buy:hover .btn_buy_number {
+    background-color: #d5001c;
+    border: 1px solid white;
+}
+
+header .btn_buy:hover p {
+    color: white;
+}
+
+
+header .btn_buy {
+    position: relative;
     cursor: pointer;
+}
+
+
+header .btn_buy .btn_buy_number {
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border: 1px solid #d5001c;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 1s;
+}
+
+header .btn_buy p {
+    color: #9a0015;
+    font-size: 0.8rem;
+    line-height: 0.2;
+    transition: all 1s;
 }
 
 
@@ -217,22 +258,22 @@ header.sticky .navbar-nav a:hover {
     background-color: white;
 }
 
-header.sticky .btn-DK i,
-header.sticky .btn-DK .btn-outline1 a {
+header.sticky .btn_buy i,
+header.sticky .btn-outline1 a {
     color: #9a0015;
     transition: all 0.5s;
     text-decoration: none;
 }
 
-header.sticky .btn-DK .btn-outline1:hover {
+header.sticky .btn-outline1:hover {
     background-color: #d5001c;
 }
 
-header.sticky .btn-DK .btn-outline1:hover a {
+header.sticky .btn-outline1:hover a {
     color: white;
 }
 
-header.sticky .btn-DK i:hover {
+header.sticky .btn_buy:hover i {
     color: #d5001c;
 }
 
@@ -244,10 +285,18 @@ header.sticky .active a {
     color: #9a0015;
 }
 
-header.sticky .dropdown-menu a{
+header.sticky .dropdown-menu a {
     color: white;
 }
 
+header.sticky .btn_buy_number {
+    background-color: #9a0015;
+    border: 1px solid white;
+}
+
+header.sticky .btn_buy p {
+    color: white;
+}
 
 /* THAY ĐỔI MÀN HÌNH */
 
@@ -283,7 +332,7 @@ header.sticky .dropdown-menu a{
         top: -40px;
     }
 
-    header .btn-DK .btn-outline1 a {
+    header .btn-outline1 a {
         display: none;
     }
 
@@ -358,34 +407,41 @@ header.sticky .dropdown-menu a{
     object-fit: cover;
     height: 800px;
 }
-.carousel_img_con img{
+
+.carousel_img_con img {
     margin: auto;
     /* height: 70%; */
 }
-.carousel_module{
+
+.carousel_module {
     display: flex;
     margin: auto;
     width: 80%;
     justify-content: center;
     margin-bottom: 10px;
 }
-.carousel_module_specs{
+
+.carousel_module_specs {
     padding: 0 40px;
     text-align: center;
     /* background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1px); */
 }
-.module_specs2{
+
+.module_specs2 {
     border-right: 2px solid #7e7d7d;
 }
-.carousel_module_specs p:first-child{
+
+.carousel_module_specs p:first-child {
     color: white;
     font-size: 1.25rem;
 }
-.carousel_module_specs p:last-child{
+
+.carousel_module_specs p:last-child {
     font-size: 0.75rem;
 }
-.carousel_module_specs p{
+
+.carousel_module_specs p {
     line-height: normal;
     padding: 0;
 }
@@ -398,7 +454,7 @@ header.sticky .dropdown-menu a{
     text-align: center;
 }
 
-.model_text p{
+.model_text p {
     padding-bottom: 40px;
     text-align: justify;
 }
@@ -503,7 +559,8 @@ header.sticky .dropdown-menu a{
     padding: 70px 0 100px;
     text-align: center;
 }
-.feedback_text h2{
+
+.feedback_text h2 {
     padding-bottom: 40px;
 }
 
@@ -584,12 +641,13 @@ footer hr {
 .footer_top__text h2 {
     color: white;
 }
-.footer_top__text p{
+
+.footer_top__text p {
     padding-bottom: 40px;
     text-align: justify;
 }
 
-.footer_top__form{
+.footer_top__form {
     justify-content: center;
     /* display: flex; */
 }
@@ -598,25 +656,28 @@ footer hr {
     cursor: pointer;
 } */
 
-.footer_top__img_text{
+.footer_top__img_text {
     cursor: pointer;
     border-top: 5px solid #d5001c00;
     transition: all 1s;
 }
+
 .footer_top__img:hover .footer_top__img_text {
     border-top: 5px solid #d5001c;
 }
 
-.footer_top__img_text h4{
+.footer_top__img_text h4 {
     padding-top: 10px;
     font-family: 'Porsche';
     transition: all 0.5s;
 }
-.footer_top__img_text p{
+
+.footer_top__img_text p {
     padding: 0;
     color: white;
 }
-.footer_top__img:hover h4{
+
+.footer_top__img:hover h4 {
     color: #d5001c;
 }
 
@@ -631,11 +692,13 @@ footer hr {
 .footer_button a:hover {
     color: white;
 }
+
 .footer_button__1_porsche a {
     color: white;
     font-size: 2rem;
 }
-.footer_button__1_porsche{
+
+.footer_button__1_porsche {
     margin: 0;
     padding: 0;
 }
@@ -753,34 +816,38 @@ footer hr {
 
 
 /* THÔNG TIN SẢN PHẨM 1 -------------------------------------------------*/
-.Con_SP1{
+.Con_SP1 {
     position: relative;
 }
+
 .Con_SP1 video {
     width: 100%;
     height: 900px;
     object-fit: cover;
 }
 
-.Con_SP1_text{
+.Con_SP1_text {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(8px);
     border-radius: 20px;
     left: 50%;
     bottom: 50%;
-    transform: translate(-50%,50%);
+    transform: translate(-50%, 50%);
     text-align: center;
     padding-bottom: 70px;
 }
-.Con_SP1_text h4{
+
+.Con_SP1_text h4 {
     padding-top: 50px;
 }
-.Con_SP1_text h2{
+
+.Con_SP1_text h2 {
     padding-bottom: 50px;
     color: white;
 }
-.Con_SP1_item{
+
+.Con_SP1_item {
     display: flex;
     width: 70%;
     margin: auto;
@@ -788,8 +855,9 @@ footer hr {
     padding: 15px 0;
     border-top: 1px solid #7e7d7d;
 }
+
 .Con_SP1_item h5,
-.Con_SP1_item p{
+.Con_SP1_item p {
     line-height: normal;
     padding: 0;
     margin: 0;
@@ -799,38 +867,141 @@ footer hr {
 
 
 /* THÔNG TIN SẢN PHẨM 2 -------------------------------------------------*/
-.Con_SP2{
+.Con_SP2 {
     margin-top: 70px;
 }
-.Con_SP2_text .col-lg-6{
+
+.Con_SP2_text .col-lg-6 {
     padding: 0;
 }
+
 .Con_SP2_img img,
-.Con_SP2_img video{
+.Con_SP2_img video {
     width: 100%;
     object-fit: cover;
     height: 400px;
 }
-.Con_SP2_text h2{
+
+.Con_SP2_text h2 {
     padding: 50px 30px 0;
 }
-.Con_SP2_text p{
+
+.Con_SP2_text p {
     padding: 30px;
     text-align: justify;
 }
-.Con_SP2_text button{
+
+.Con_SP2_text button {
     margin: 0 30px 30px;
 }
 
 /* THAY ĐỔI MÀN HÌNH ------------- */
 @media screen and (max-width: 992px) {
-    .Con_SP2_text{
+    .Con_SP2_text {
         text-align: center;
     }
 }
 
 
 
+
+
+/*-----------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------*/
+
+/* ĐĂNG NHẬP -------------------------------------------------*/
+.fromDangNhap {
+    background: url('../img/7.DangNhap_DangKy_GioHang/banner7.1.jpeg') no-repeat center /cover;
+    width: 100%;
+    padding: 150px 0 100px;
+}
+
+.fromDangNhap .fromDangNhap_item {
+    color: white;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+}
+
+.fromDangNhap .fromDangNhap_item .form-group{
+    width: 50%;
+    margin: auto;
+    font-size: 1.3rem;
+    padding-top: 30px;
+}
+
+.fromDangNhap .fromDangNhap_item .btn_click_do {
+    margin: 30px 0;
+}
+
+.fromDangNhap .fromDangNhap_item p {
+    border-top: 1px solid #7e7d7d;
+    padding: 10px 0 0;
+    margin: 0;
+    color: white;
+}
+.fromDangNhap .fromDangNhap_item .btn_click_trang {
+    margin: 20px 0 30px;
+}
+
+
+/* THAY ĐỔI MÀN HÌNH ------------- */
+/* @media screen and (max-width: 576px) {
+    .fromDangNhap .fromDangNhap_item{
+        width: 80%;
+        color: #9a0015;
+    }
+
+} */
+
+
+/* GIỎ HÀNG -------------------------------------------------*/
+
+.fromGioHang {
+    background: url('../img/7.DangNhap_DangKy_GioHang/banner7.3.jpeg') no-repeat center /cover;
+    width: 100%;
+    padding: 150px 0 100px;
+}
+
+.fromGioHang .DSGioHang {
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+}
+
+.fromGioHang .DSGioHang table {
+    width: 80%;
+    margin: auto;
+}
+
+.fromGioHang .DSGioHang table thead {
+    font-size: 1.3rem;
+    color: #b5b5b5;
+}
+
+.fromGioHang .DSGioHang h3 {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #7e7d7d;
+}
+
+.fromGioHang .DSGioHang h4 {
+    padding-top: 20px;
+    /* border-top: 1px solid #7e7d7d; */
+    font-size: 1.5rem;
+    color: #ff0022;
+}
+
+.fromGioHang .DSGioHang #TongTien {
+    font-size: 1.3rem;
+}
 
 
 
@@ -852,7 +1023,7 @@ footer hr {
     transition: all 0.5s;
 }
 
-.btn_click_trang:hover{
+.btn_click_trang:hover {
     background-color: white;
     color: #d5001c;
 }

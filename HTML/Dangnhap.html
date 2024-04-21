@@ -54,7 +54,7 @@
 
     <header>
         <nav class="container-xl navbar navbar-expand-lg">
-            <a class="font-P navbar-brand" href="../index.html">Porsche</a>
+            <a class="font-P navbar-brand" href="./index.html">Porsche</a>
 
             <!-- thanh bar khi ở chế độ đt -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -65,7 +65,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./index.html">Trang chủ <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -73,20 +73,20 @@
                             Các dòng xe
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="../HTML/718.html">718</a>
-                            <a class="dropdown-item" href="../HTML/911.html">911</a>
-                            <a class="dropdown-item" href="../HTML/Taycan.html">Taycan</a>
-                            <a class="dropdown-item" href="../HTML/Panamera.html">Panamera</a>
-                            <a class="dropdown-item" href="../HTML/Macan.html">Macan</a>
-                            <a class="dropdown-item" href="../HTML/Cayenne.html">Cayenne</a>
+                            <a class="dropdown-item" href="./718.html">718</a>
+                            <a class="dropdown-item" href="./911.html">911</a>
+                            <a class="dropdown-item" href="./Taycan.html">Taycan</a>
+                            <a class="dropdown-item" href="./Panamera.html">Panamera</a>
+                            <a class="dropdown-item" href="./Macan.html">Macan</a>
+                            <a class="dropdown-item" href="./Cayenne.html">Cayenne</a>
                         </div>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Về Porcher</a>
+                        <a class="nav-link" href="./index.html">Về Porcher</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Dịch vụ</a>
+                        <a class="nav-link" href="./index.html">Dịch vụ</a>
                     </li>
                 </ul>
 
@@ -102,11 +102,16 @@
 
                 <div class="btn-DK">
                     <div class="btn_buy">
-                        <a href="../HTML/GioHang.html"><i class="fa-solid fa-cart-flatbed"></i></a>
+                        <a onclick="kiemTraLogin()">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="btn_buy_number">
+                                <p class="cardNumber"></p>
+                            </div>
+                        </a>
                     </div>
 
-                    <button class="btn btn-outline1">
-                        <a href="../HTML/Dangnhap.html">Tài khoản</a>
+                    <button class="btn-outline1">
+                        <a href="./Dangnhap.html" class="btn_user">Đăng nhập</a>
                     </button>
                 </div>
             </div>
@@ -115,34 +120,28 @@
 
 
     <!-- FORM ĐĂNG NHẬP -->
-<Section class="fromDangNhap">
-<div>
-    <div>
-        <img src="../img/7.DangNhap_DangKy_GioHang/banner7.1.jpeg" alt="">
-    </div>
-    <div class="form-group">
-        <label for="User">Tài khoản</label>
-        <input type="text" class="form-control" id="User" placeholder="Tài khoản">
-    </div>
+    <Section class="fromDangNhap">
+        <div class="container fromDangNhap_item">
+            <div class="form-group">
+                <label for="UserTK">Tài khoản</label>
+                <input type="text" class="form-control" id="UserTK" placeholder="Tài khoản">
+            </div>
 
-    <div class="form-group">
-        <label for="password">Mật khẩu</label>
-        <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
-    </div>
-    <div>
-        <a href="./DangKy.html">Đăng ký</a>
-    </div>
-    <button>
-        <a href="">ĐĂNG NHẬP</a>
-    </button>
-</div>
-</Section>
+            <div class="form-group">
+                <label for="passwordTK">Mật khẩu</label>
+                <input type="password" class="form-control" id="passwordTK" placeholder="Mật khẩu">
+            </div>
+            <a><button class="btn_click_do" onclick="dangNhap()">ĐĂNG NHẬP</button></a>
+            <div>
+                <p>Đăng ký ngay nếu bạn chưa có tài khoản</p>
+            <a href="./DangKy.html"><button class="btn_click_trang">ĐĂNG KÝ</button></a>
+            </div>
+        </div>
+    </Section>
 
 
-
-   
     <!-- CÁC LOẠI XE + GIÁ -->
-    <section class="LoaiXe">
+    <!-- <section class="LoaiXe">
         <div class="container model">
             <div class="model_text">
                 <h4>CÁC DÒNG XE</h4>
@@ -157,115 +156,12 @@
             </div>
 
             <div class="row model_card">
-                <div class="card col-lg-4 col-md-6">
-                    <div class="model_box">
-                        <div class="model_img">
-                            <a href="../HTML/718.html">
-                                <img src="../img/porsche-small 1.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="model_footer">
-                                <a href="../HTML/718.html"><button class="btn_click_trang">Xem thêm</button></a>
-                                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
-                            </div>
-                        </div>
-                        <div class="model_body">
-                            <a href="../HTML/718.html">718</a><br>
-                            <p>Giá từ 3.850.000.000 VNĐ*</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="model_box">
-                        <div class="model_img">
-                            <a href="../HTML/911.html">
-                                <img src="../img/porsche-small 2.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="model_footer">
-                                <a href="../HTML/911.html"><button class="btn_click_trang">Xem thêm</button></a>
-                                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
-                            </div>
-                        </div>
-                        <div class="model_body">
-                            <a href="../HTML/911.html">911</a><br>
-                            <p>Giá từ 7.620.000.000 VNĐ*</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="model_box">
-                        <div class="model_img">
-                            <a href="../HTML/Taycan.html">
-                                <img src="../img/porsche-small 3.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="model_footer">
-                                <a href="../HTML/Taycan.html"><button class="btn_click_trang">Xem thêm</button></a>
-                                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
-                            </div>
-                        </div>
-                        <div class="model_body">
-                            <a href="../HTML/Taycan.html">Taycan</a><br>
-                            <p>Giá từ 4.260.000.000 VNĐ*</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="model_box">
-                        <div class="model_img">
-                            <a href="../HTML/Panamera.html">
-                                <img src="../img/porsche-small 4.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="model_footer">
-                                <a href="../HTML/Panamera.html"><button class="btn_click_trang">Xem thêm</button></a>
-                                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
-                            </div>
-                        </div>
-                        <div class="model_body">
-                            <a href="../HTML/Panamera.html">Panamera</a><br>
-                            <p>Giá từ 5.560.000.000 VNĐ*</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="model_box">
-                        <div class="model_img">
-                            <a href="../HTML/Macan.html">
-                                <img src="../img/porsche-small 5.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="model_footer">
-                                <a href="../HTML/Macan.html"><button class="btn_click_trang">Xem thêm</button></a>
-                                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
-                            </div>
-                        </div>
-                        <div class="model_body">
-                            <a href="../HTML/Macan.html">Macan</a><br>
-                            <p>Giá từ 3.350.000.000 VNĐ*</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-md-6 mt-md-0 mt-5">
-                    <div class="model_box">
-                        <div class="model_img">
-                            <a href="../HTML/Cayenne.html">
-                                <img src="../img/porsche-small 6.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="model_footer">
-                                <a href="../HTML/Cayenne.html"><button class="btn_click_trang">Xem thêm</button></a>
-                                <a href="../HTML/GioHang.html"><button class="btn_click_do">Mua ngay</button></a>
-                            </div>
-                        </div>
-                        <div class="model_body">
-                            <a href="../HTML/Cayenne.html">Cayenne</a><br>
-                            <p>Giá từ 5.560.000.000 VNĐ*</p>
-                        </div>
-                    </div>
-                </div>
 
             </div>
 
         </div>
 
-    </section>
+    </section> -->
 
 
 
@@ -278,7 +174,8 @@
                 <h4>Khám phá</h4>
                 <h2>Discover</h2>
                 <p>
-                    Mùa lễ hội này, hãy biến giấc mơ của những người thân yêu thành hiện thực và tận hưởng những khoảnh khắc đáng nhớ với Porsche Lifestyle.
+                    Mùa lễ hội này, hãy biến giấc mơ của những người thân yêu thành hiện thực và tận hưởng những khoảnh
+                    khắc đáng nhớ với Porsche Lifestyle.
                 </p>
             </div>
             <div class="row footer_top__form">
@@ -324,10 +221,11 @@
         <div class="row container footer_button">
             <div class="col-lg-4 col-md-6 footer_button__1">
                 <div class="footer_button__1_porsche">
-                    <a class="font-P" href="../index.html">Porsche</a>
+                    <a class="font-P" href="./index.html">Porsche</a>
                 </div>
                 <p>
-                    Dr. Ing. h. c. F. Porsche AG được thành lập từ ngày 25 tháng 4 năm 1931 bởi ông Ferdinand Porsche và có trụ sở chính đặt tại thành phố Stuttgart, Đức.
+                    Dr. Ing. h. c. F. Porsche AG được thành lập từ ngày 25 tháng 4 năm 1931 bởi ông Ferdinand Porsche và
+                    có trụ sở chính đặt tại thành phố Stuttgart, Đức.
                 </p>
                 <div class="footer_button__1logo">
                     <a href="">
@@ -406,7 +304,12 @@
 
 
     <!-- JS HTML -->
+    <script src="../JS/KTdangNhap.js"></script>
+    <script src="../JS/dangNhap.js"></script>
 
+    <script src="../JS/maSP.js"></script>
+
+    <script src="../JS/gioHang.js"></script>
 
 
 
