@@ -48,7 +48,7 @@ function dangKy() {
     taiKhoanND.themND(user)
     setLocalStorage(taiKhoanND.mangND)
 
-    // alert("Đăng ký thành công")
-    // window.location.href = "GioHang.html"
+    alert("Đăng ký thành công")
+    window.location.href = "Dangnhap.html"
 
 }

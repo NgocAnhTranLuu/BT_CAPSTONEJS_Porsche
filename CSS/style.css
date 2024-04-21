@@ -169,7 +169,8 @@ header .btn-outline1 {
     height: 40px;
 }
 
-header .btn-outline1 a {
+header .btn-outline1 p {
+
     text-decoration: none;
     color: white;
     border: none;
@@ -178,8 +179,6 @@ header .btn-outline1 a {
     transition: all 1s;
     display: block;
 }
-
-
 
 
 header .navbar-nav a:hover,
@@ -236,6 +235,25 @@ header .btn_buy p {
     line-height: 0.2;
     transition: all 1s;
 }
+header .btn-outline_user{
+    position: relative;
+}
+header .btn_user_ten{
+    position: absolute;
+    background-color: #9a001530;
+    backdrop-filter: blur(5px);
+    /* border: 1px solid #515151; */
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    right: 0;
+    top: 55px;
+    text-align: center;
+}
+header .btn_user_ten h5{
+    color: white;
+    font-size: 1rem;
+}
 
 
 
@@ -259,7 +277,7 @@ header.sticky .navbar-nav a:hover {
 }
 
 header.sticky .btn_buy i,
-header.sticky .btn-outline1 a {
+header.sticky .btn-outline1 p {
     color: #9a0015;
     transition: all 0.5s;
     text-decoration: none;
@@ -332,7 +350,7 @@ header.sticky .btn_buy p {
         top: -40px;
     }
 
-    header .btn-outline1 a {
+    header .btn-outline1 p {
         display: none;
     }
 

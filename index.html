@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/iconTLNA2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/iconTLNA2.png" type="image/x-icon">
     <title>CorpVision - TranLuuNgocAnh</title>
 
 
@@ -64,7 +64,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="./index.html">Trang chủ <span class="sr-only">(current)</span></a>
                     </li>
 
@@ -73,12 +73,12 @@
                             Các dòng xe
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="./718.html">718</a>
-                            <a class="dropdown-item" href="./911.html">911</a>
-                            <a class="dropdown-item" href="./Taycan.html">Taycan</a>
-                            <a class="dropdown-item" href="./Panamera.html">Panamera</a>
-                            <a class="dropdown-item" href="./Macan.html">Macan</a>
-                            <a class="dropdown-item" href="./Cayenne.html">Cayenne</a>
+                            <a class="dropdown-item" href="./HTML/718.html">718</a>
+                            <a class="dropdown-item" href="./HTML/911.html">911</a>
+                            <a class="dropdown-item" href="./HTML/Taycan.html">Taycan</a>
+                            <a class="dropdown-item" href="./HTML/Panamera.html">Panamera</a>
+                            <a class="dropdown-item" href="./HTML/Macan.html">Macan</a>
+                            <a class="dropdown-item" href="./HTML/Cayenne.html">Cayenne</a>
                         </div>
                     </li>
 
@@ -110,45 +110,91 @@
                         </a>
                     </div>
 
-                    <div class="btn-outline_user" data-target="#anUser" data-toggle="collapse" onclick="clickTaiKhoan()">
-                        <button class="btn-outline1">
-                            <p class="btn_user">Đăng nhập</p>
-                        </button>
-                        <div class="btn_user_ten collapse hidden" id="anUser">
-                            <h5 class="btn_user_tenND"></h5>
-                            <button class="btn btn-danger">Đăng xuất</button>
-                        </div>
-
-                    </div>
+                    <button class="btn-outline1">
+                        <a href="./HTML/Dangnhap.html" class="btn_user"></a>
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
 
 
-    <!-- FORM ĐĂNG NHẬP -->
-    <Section class="fromDangNhap">
-        <div class="container fromDangNhap_item">
-            <div class="form-group">
-                <label for="UserTK">Tài khoản</label>
-                <input type="text" class="form-control" id="UserTK" placeholder="Tài khoản">
+    <!-- BANNER/CAROUSEL -->
+    <section class="carousel_banner">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <!-- nút - chuyển -->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel_item carousel-item active">
+                    <!-- <img src="./img/banner1.jpeg" class="d-block w-100" alt="..."> -->
+                    <div class="carousel-caption d-md-block">
+                        <h5>Tinh thần nguyên bản - Năng lượng đột phá.</h5>
+                        <p>DÒNG XE</p>
+                        <span>Taycan</span>
+                        <div>
+                            <a href="./HTML/Taycan.html"><button class="btn_click_trang">Xem chi tiết</button></a>
+                            <a><button class="btn_click_do gioHangChung" onclick="gioHangChung()" value="SP003">Thêm giỏ hàng</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel_img">
+                        <img src="./img/banner1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <div class="carousel_item carousel-item">
+                    <!-- <img src="./img/banner2.jpeg" class="d-block w-100" alt="..."> -->
+                    <div class="carousel-caption d-md-block">
+                        <h5>Cỗ máy kinh điển - Xa hơn cùng nhau.</h5>
+                        <p>DÒNG XE</p>
+                        <span>Cayenne</span>
+                        <div>
+                            <a href="./HTML/Cayenne.html"><button class="btn_click_trang">Xem chi tiết</button></a>
+                            <!-- <a><button class="btn_click_do gioHangChung" onclick="gioHangChung()" value="SP006">Thêm giỏ hàng</button></a> -->
+                        </div>
+                    </div>
+                    <div class="carousel_img">
+                        <img src="./img/banner2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <div class="carousel_item carousel-item">
+                    <!-- <img src="./img/banner3.jpeg" class="d-block w-100" alt="..."> -->
+                    <div class="carousel-caption d-md-block">
+                        <h5>Can đảm dẫn đầu - Thể thao thuần khiết.</h5>
+                        <p>DÒNG XE</p>
+                        <span>718 Cayman</span>
+                        <div>
+                            <a href="./HTML/718.html"><button class="btn_click_trang">Xem chi tiết</button></a>
+                            <!-- <a><button class="btn_click_do gioHangChung" onclick="gioHangChung()" value="SP001">Thêm giỏ hàng</button></a> -->
+                        </div>
+                    </div>
+                    <div class="carousel_img">
+                        <img src="./img/banner3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="passwordTK">Mật khẩu</label>
-                <input type="password" class="form-control" id="passwordTK" placeholder="Mật khẩu">
-            </div>
-            <a><button class="btn_click_do" onclick="dangNhap()">ĐĂNG NHẬP</button></a>
-            <div>
-                <p>Đăng ký ngay nếu bạn chưa có tài khoản</p>
-            <a href="./DangKy.html"><button class="btn_click_trang">ĐĂNG KÝ</button></a>
-            </div>
+            <!-- 2 nút sang trái phải -->
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
         </div>
-    </Section>
+    </section>
 
 
     <!-- CÁC LOẠI XE + GIÁ -->
-    <!-- <section class="LoaiXe">
+    <section class="LoaiXe">
         <div class="container model">
             <div class="model_text">
                 <h4>CÁC DÒNG XE</h4>
@@ -168,9 +214,108 @@
 
         </div>
 
-    </section> -->
+    </section>
 
 
+    <!-- VIDEO -->
+    <section class="video_SP">
+        <div class="container video_text">
+            <h4>VỀ CHÚNG TÔI</h4>
+            <h2>Porcher</h2>
+            <p>
+                Thành lập từ năm 2007, Porsche đã đánh dấu hơn một thập kỷ tại thị trường Việt Nam và đang phát triển
+                vững mạnh, xác lập vị thế hàng đầu trong phân khúc xe hơi thể thao hạng sang. Porsche tại Việt Nam hiện
+                phát triển mạnh mẽ với trung tâm Porsche Sài Gòn, trung tâm Porsche Hà Nội và điểm đến phong cách sống
+                Porsche Studio Hà Nội với cơ sở hạ tầng và trang thiết bị hiện đại cùng đội ngũ gần 100 nhân viên, cung
+                cấp những dịch vụ theo tiêu chuẩn toàn cầu.
+            </p>
+        </div>
+        <video loop autoplay muted src="./video/Porsche-Taycan.mp4"></video>
+    </section>
+
+
+
+    <!-- FEEDBACK -->
+    <section class="FEEDBACK">
+        <div class="container feedback">
+            <div class="feedback_text">
+                <h4>CẢM NHẬN CỦA KHÁCH HÀNG</h4>
+                <h2>Testimonials</h2>
+            </div>
+            <div class="feedback_slide">
+                <div class="feedback_item">
+                    <div class="feedback_people">
+                        <div class="feedback_img">
+                            <img src="./img/feedback-01.jpg" alt="">
+                        </div>
+                        <div class="feedback_name">
+                            <h5>Jisoo</h5>
+                            <p>BLɅϽKPIИK</p>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                    </p>
+                </div>
+                <div class="feedback_item">
+                    <div class="feedback_people">
+                        <div class="feedback_img">
+                            <img src="./img/feedback-02.jpg" alt="">
+                        </div>
+                        <div class="feedback_name">
+                            <h5>Jennie</h5>
+                            <p>BLɅϽKPIИK</p>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                    </p>
+                </div>
+                <div class="feedback_item">
+                    <div class="feedback_people">
+                        <div class="feedback_img">
+                            <img src="./img/feedback-03.jpg" alt="">
+                        </div>
+                        <div class="feedback_name">
+                            <h5>Rosé</h5>
+                            <p>BLɅϽKPIИK</p>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                    </p>
+                </div>
+                <div class="feedback_item">
+                    <div class="feedback_people">
+                        <div class="feedback_img">
+                            <img src="./img/feedback-04.jpg" alt="">
+                        </div>
+                        <div class="feedback_name">
+                            <h5>Lisa</h5>
+                            <p>BLɅϽKPIИK</p>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora. Dolores molestias adipisci dolo amet!. Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
 
 
@@ -188,7 +333,7 @@
             <div class="row footer_top__form">
                 <div class="footer_top__img col-lg-3 col-md-6">
                     <div>
-                        <img src="../img/Discover-porsche-1.jpg" class="d-block w-100" alt="...">
+                        <img src="./img/Discover-porsche-1.jpg" class="d-block w-100" alt="...">
                         <div class="footer_top__img_text">
                             <h4>Porsche</h4>
                             <p>E-Performance</p>
@@ -197,7 +342,7 @@
                 </div>
                 <div class="footer_top__img col-lg-3 col-md-6">
                     <div>
-                        <img src="../img/Discover-porsche-2.jpg" class="d-block w-100" alt="...">
+                        <img src="./img/Discover-porsche-2.jpg" class="d-block w-100" alt="...">
                         <div class="footer_top__img_text">
                             <h4>Porsche</h4>
                             <p>Phong cách - Lifestyle</p>
@@ -206,7 +351,7 @@
                 </div>
                 <div class="footer_top__img col-lg-3 col-md-6">
                     <div>
-                        <img src="../img/Discover-porsche-3.jpg" class="d-block w-100" alt="...">
+                        <img src="./img/Discover-porsche-3.jpg" class="d-block w-100" alt="...">
                         <div class="footer_top__img_text">
                             <h4>Porsche</h4>
                             <p>Cung đường chinh phục</p>
@@ -215,7 +360,7 @@
                 </div>
                 <div class="footer_top__img col-lg-3 col-md-6">
                     <div>
-                        <img src="../img/Discover-porsche-4.jpg" class="d-block w-100" alt="...">
+                        <img src="./img/Discover-porsche-4.jpg" class="d-block w-100" alt="...">
                         <div class="footer_top__img_text">
                             <h4>Porsche</h4>
                             <p>Bộ sưu tập - Phụ kiện</p>
@@ -277,12 +422,12 @@
             <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5 footer_button__4">
                 <h3>Dòng xe</h3>
                 <ul>
-                    <li><a href="../HTML/718.html">718</a></li>
-                    <li><a href="../HTML/911.html">911</a></li>
-                    <li><a href="../HTML/Taycan.html">Taycan</a></li>
-                    <li><a href="../HTML/Panamera.html">Panamera</a></li>
-                    <li><a href="../HTML/Macan.html">Macan</a></li>
-                    <li><a href="../HTML/Cayenne.html">Cayenne</a></li>
+                    <li><a href="./HTML/718.html">718</a></li>
+                    <li><a href="./HTML/911.html">911</a></li>
+                    <li><a href="./HTML/Taycan.html">Taycan</a></li>
+                    <li><a href="./HTML/Panamera.html">Panamera</a></li>
+                    <li><a href="./HTML/Macan.html">Macan</a></li>
+                    <li><a href="./HTML/Cayenne.html">Cayenne</a></li>
                 </ul>
             </div>
         </div>
@@ -311,12 +456,10 @@
 
 
     <!-- JS HTML -->
-    <script src="../JS/KTdangNhap.js"></script>
-    <script src="../JS/dangNhap.js"></script>
-
-    <script src="../JS/maSP.js"></script>
-
-    <script src="../JS/gioHang.js"></script>
+    <script src="./JS/KTdangNhap.js"></script>
+    <script src="./JS/maSP.js"></script>
+    
+    <script src="./JS/mainSPindex.js"></script>
 
 
 
@@ -346,8 +489,8 @@
     </script>
 
     <!-- BACKTOTOP -->
-    <script src="../JS/BackToTop/util.js"></script>
-    <script src="../JS/BackToTop/main.js"></script>
+    <script src="./JS/BackToTop/util.js"></script>
+    <script src="./JS/BackToTop/main.js"></script>
 
     <!-- Hiệu ứng chạy trang Slick JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
