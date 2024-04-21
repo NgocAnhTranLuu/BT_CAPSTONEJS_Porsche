@@ -10,8 +10,8 @@ function kiemTraLogin() {
     if (kiemTraUser) {
         window.location.href = "GioHang.html"
     } else {
-        alert("Đăng nhập ngay để mua sắm thỏa thích")
-        window.location.href = "Dangnhap.html"
+        // alert("Đăng nhập ngay để mua sắm thỏa thích")
+        // window.location.href = "Dangnhap.html"
     }
 }
 
@@ -40,8 +40,8 @@ function clickTaiKhoan() {
         btnUser = KTUser
         document.querySelector(".btn_user_tenND").innerHTML = "Tài khoản: " + btnUser
     } else {
-        alert("Đăng nhập ngay để mua sắm thỏa thích")
-        window.location.href = "Dangnhap.html"
+        // alert("Đăng nhập ngay để mua sắm thỏa thích")
+        // window.location.href = "Dangnhap.html"
     }
 
 
