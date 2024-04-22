@@ -49,3 +49,11 @@ function dangNhapKoTK() {
     window.location.href = "HTML/Dangnhap.html"
 }
 
+
+
+function logOutUser() {
+    if (kiemTraUser) {
+        localStorage.removeItem("UserChinh");
+        window.location.href = "index.html"
+    }
+}

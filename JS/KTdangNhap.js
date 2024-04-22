@@ -49,3 +49,20 @@ function dangNhapKoTK() {
     window.location.href = "Dangnhap.html"
 }
 
+function logOutUser() {
+    if (kiemTraUser) {
+        localStorage.removeItem("UserChinh");
+        window.location.href = "../index.html"
+    }
+}
+
+
+
+
+//3: chỉnh lại API
+//Giỏ hàng lưu local, API: 1. danh sách sản phẩm, có id, ảnh,... 2.lọc sản phẩm 3.lấy chi tiết sản phẩm 4.đăng nhập và đăng ký
+
+//lọc sản phẩm theo danh mục, tăng giảm giá, hoặc tìm kiếm
+
+
+// nếu có thời gian, xem lại SASS và phân chia lại vị trí folder

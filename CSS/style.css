@@ -242,7 +242,7 @@ header .btn-outline_user{
 }
 header .btn_user_ten{
     position: absolute;
-    background-color: #9a001530;
+    background-color: #9a00159a;
     backdrop-filter: blur(5px);
     /* border: 1px solid #515151; */
     border-radius: 5px;
@@ -952,7 +952,7 @@ footer hr {
     width: 50%;
     margin: auto;
     font-size: 1.3rem;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .fromDangNhap .fromDangNhap_item .btn_click_do {
@@ -964,6 +964,12 @@ footer hr {
     padding: 10px 0 0;
     margin: 0;
     color: white;
+}
+.fromDangNhap .fromDangNhap_item span {
+    color: #ff0022;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: 5px;
 }
 .fromDangNhap .fromDangNhap_item .btn_click_trang {
     margin: 20px 0 30px;
@@ -1018,6 +1024,18 @@ footer hr {
     /* border-top: 1px solid #7e7d7d; */
     font-size: 1.5rem;
     color: #ff0022;
+}
+
+.fromGioHang .DSGioHang a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    /* font-family: 'Porsche'; */
+    transition: all 0.5s;
+}
+.fromGioHang .DSGioHang a:hover {
+    color: #ff0022;
+    text-decoration: none;
 }
 
 .fromGioHang .DSGioHang #TongTien {

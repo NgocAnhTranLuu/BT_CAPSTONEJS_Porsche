@@ -137,7 +137,7 @@ function addStrData() {
     addCard.map((item, index) => {
         strData += `
         <tr>
-            <td>${item.sp.ten}</td>
+            <td><a href="./${item.sp.ten}.html">${item.sp.ten}</a></td>
             <td>
                 <img src="../img/10.HinhGioHang/${item.sp.hinh[1]}" alt="" width="150px">
             </td>
@@ -149,7 +149,9 @@ function addStrData() {
             </td>
             <td>${Number(item.sp.gia * item.qty).toLocaleString()}</td>
             <td>
-                <button onclick='deleteSP(${index})' class="btn btn-danger">Xóa</button>
+                <button onclick='deleteSP(${index})' class="btn btn-danger">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
             </td>
         </tr>
         `;
@@ -187,15 +189,15 @@ function minusQuantity(index, qty) {
 }
 
 
-function deleteSP (index) {
+function deleteSP(index) {
     soLuongGioHang -= addCard[index].qty
     addCard.splice(index, 1);
 
     saveToLocalStorage();
     addStrData();
     domSLGioHang()
-  }
+}
 
 // function cartLoadPage() {
-    addStrData();
+addStrData();
 // }

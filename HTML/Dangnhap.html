@@ -120,7 +120,7 @@
                         </button>
                         <div class="btn_user_ten collapse hidden" id="anUser">
                             <h5 class="btn_user_tenND"></h5>
-                            <button class="btn btn-danger">Đăng xuất</button>
+                            <button class="btn btn-danger" onclick="logOutUser()">Đăng xuất</button>
                         </div>
 
                     </div>
@@ -134,13 +134,15 @@
     <Section class="fromDangNhap">
         <div class="container fromDangNhap_item">
             <div class="form-group">
-                <label for="UserTK">Tài khoản</label>
-                <input type="text" class="form-control" id="UserTK" placeholder="Tài khoản">
+                <label for="UserDN">Tài khoản</label>
+                <input type="text" class="form-control" id="UserDN" placeholder="Tài khoản">
+                <!-- <span id="spanUserDN"></span> -->
             </div>
 
             <div class="form-group">
-                <label for="passwordTK">Mật khẩu</label>
-                <input type="password" class="form-control" id="passwordTK" placeholder="Mật khẩu">
+                <label for="passwordDN">Mật khẩu</label>
+                <input type="password" class="form-control" id="passwordDN" placeholder="Mật khẩu">
+                <!-- <span id="spanPassWordDN"></span> -->
             </div>
             <a><button class="btn_click_do" onclick="dangNhap()">ĐĂNG NHẬP</button></a>
             <div>
@@ -314,8 +316,13 @@
 
 
 
+    <!-- JS axios github -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+
     <!-- JS HTML -->
     <script src="../JS/KTdangNhap.js"></script>
+    <!-- <script src="../JS/validation.js"></script> -->
     <script src="../JS/dangNhap.js"></script>
 
     <script src="../JS/maSP.js"></script>

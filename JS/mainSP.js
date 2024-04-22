@@ -1,3 +1,4 @@
+
 function saveToLocalStorage() {
     localStorage.setItem("myCard", JSON.stringify(addCard))
     localStorage.setItem("totalQty", soLuongGioHang + "")

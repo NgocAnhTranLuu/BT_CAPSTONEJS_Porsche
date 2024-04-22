@@ -120,7 +120,7 @@
                         </button>
                         <div class="btn_user_ten collapse hidden" id="anUser">
                             <h5 class="btn_user_tenND"></h5>
-                            <button class="btn btn-danger">Đăng xuất</button>
+                            <button class="btn btn-danger" onclick="logOutUser()">Đăng xuất</button>
                         </div>
 
                     </div>
@@ -136,21 +136,24 @@
             <div class="form-group">
                 <label for="User">Tên Tài khoản</label>
                 <input type="text" class="form-control" id="User" placeholder="Tên Tài khoản">
+                <span id="spanUserDK"></span>
             </div>
 
             <div class="form-group">
                 <label for="email">Email đăng ký</label>
                 <input type="email" class="form-control" id="email" placeholder="Email đăng ký">
+                <span id="spanEmailDK"></span>
             </div>
 
             <div class="form-group">
                 <label for="password">Mật khẩu</label>
                 <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
+                <span id="spanPassWordDK"></span>
             </div>
             <a><button class="btn_click_do" onclick="dangKy()">ĐĂNG KÝ</button></a>
             <div>
                 <p>Đăng nhập ngay nếu bạn đã có tài khoản</p>
-            <a href="./Dangnhap.html"><button class="btn_click_trang">ĐĂNG NHẬP</button></a>
+                <a href="./Dangnhap.html"><button class="btn_click_trang">ĐĂNG NHẬP</button></a>
             </div>
         </div>
     </Section>
@@ -319,8 +322,13 @@
 
 
 
+    <!-- JS axios github -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+
     <!-- JS HTML -->
     <script src="../JS/KTdangNhap.js"></script>
+    <script src="../JS/validation.js"></script>
     <script src="../JS/dangKy.js"></script>
 
     <script src="../JS/maSP.js"></script>

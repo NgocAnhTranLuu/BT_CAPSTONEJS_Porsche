@@ -9,6 +9,10 @@
 
 //kiểm tra ở local có biến UserChinh chưa? để bắt đăng nhập hoặc chuyển trang (vì isLogin mặc định là false - do khi chưa đăng nhập thì chưa lưu file)
 let isLogin = localStorage.getItem("UserChinh") ? true : false
+// let isTaiKhoanND = localStorage.getItem("TaiKhoanND") ? true : false
+
+
+// console.log(username)
 
 function checkLogin() {
     if (isLogin) {
@@ -17,25 +21,36 @@ function checkLogin() {
     }
 }
 
+
 function dangNhap() {
-    let username = document.querySelector("#UserTK").value
-    let password = document.querySelector("#passwordTK").value
 
-    //lấy thông tin từ local
-    let user = localStorage.getItem("TaiKhoanND")
-    let data = JSON.parse(user)
+    let username = document.querySelector("#UserDN").value
+    let password = document.querySelector("#passwordDN").value;
+    if (localStorage.getItem("TaiKhoanND")) {
+        //lấy thông tin từ local
+        let user = localStorage.getItem("TaiKhoanND")
+        let data = JSON.parse(user)
+        console.log(data)
 
-    //hàm some để kiểm tra biến true hoặc flase
-    let checkDN = data.some(value => value.username == username && value.password == password)
-    // console.log(checkDN)
+        //hàm some để kiểm tra biến true hoặc flase
+        let checkDN = data.some(value => value.username == username && value.password == password)
+        console.log(data.username)
+        console.log(username)
 
-    if (checkDN) {
-        localStorage.setItem("UserChinh", username)
-        //nếu checkDN là true thì lưu vào local user
-        isLogin = true
-        checkLogin() //đổi isLogin về true (vì mặc định là false) và chạy hàm để chuyển trang
-    } else{
+        console.log(checkDN)
+
+        if (checkDN) {
+            localStorage.setItem("UserChinh", username)
+            //nếu checkDN là true thì lưu vào local user
+            isLogin = true
+            checkLogin() //đổi isLogin về true (vì mặc định là false) và chạy hàm để chuyển trang
+        } else {
+            alert("Đăng nhập thất bại")
+        }
+    } else {
         alert("Đăng nhập thất bại")
     }
+
+
 
 }
