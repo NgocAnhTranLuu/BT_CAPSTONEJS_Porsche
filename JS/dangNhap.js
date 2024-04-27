@@ -30,14 +30,9 @@ function dangNhap() {
         //lấy thông tin từ local
         let user = localStorage.getItem("TaiKhoanND")
         let data = JSON.parse(user)
-        console.log(data)
 
         //hàm some để kiểm tra biến true hoặc flase
         let checkDN = data.some(value => value.username == username && value.password == password)
-        console.log(data.username)
-        console.log(username)
-
-        console.log(checkDN)
 
         if (checkDN) {
             localStorage.setItem("UserChinh", username)

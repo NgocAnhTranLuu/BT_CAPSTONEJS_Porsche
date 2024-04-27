@@ -857,6 +857,7 @@ footer hr {
     transform: translate(-50%, 50%);
     text-align: center;
     padding-bottom: 70px;
+    z-index: 2;
 }
 
 .Con_SP1_text h4 {
@@ -1094,3 +1095,10 @@ footer hr {
 .btn_click_trang:hover a{
     color: #d5001c;
 } */
+
+.gioThemSanPham{
+    display: none;
+}
+
+
+/*-----------------------------------------------------------------------*/
